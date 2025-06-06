@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alvo Marketing | Portfólio</title>
+  <style>
+    :root {
+      --laranja: #FF6F00;
+      --roxo: #6A1B9A;
+      --preto: #000;
+      --branco: #fff;
+      --cinza: #f5f5f5;
+    }
+
+    body.dark-mode {
+      --laranja: #6A1B9A;
+      --roxo: #FF6F00;
+      --preto: #fff;
+      --branco: #000;
+      --cinza: #1e1e1e;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--branco);
+      color: var(--preto);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      background-color: var(--laranja);
+      color: var(--branco);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .topo-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .topo-header .logo {
+      max-height: 80px;
+      height: auto;
+    }
+
+    .topo-header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      text-align: center;
+      color: #fff !important;
+    }
+
+    header p {
+      margin-top: 1rem;
+      color: #fff !important;
+    }
+
+    nav {
+      background-color: var(--preto);
+      color: var(--branco);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: var(--branco);
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav button {
+      background: none;
+      border: 1px solid var(--branco);
+      color: var(--branco);
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-left: 1rem;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .servico, .projeto {
+      background-color: var(--cinza);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    footer {
+      background-color: var(--roxo);
+      color: var(--branco);
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 1rem;
+      justify-items: center;
+    }
+
+    .galeria img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 1rem;
+      object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+      .galeria {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .topo-header {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .galeria {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topo-header">
+      <img src="LOGOOOOOOOOOO3.png.png" alt="Logo Alvo Marketing" class="logo">
+      <h1>Alvo Marketing</h1>
+    </div>
+    <p>Portfólio Digital - Criatividade Estratégica</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#portfolio">Portfólio</a>
+    <a href="#contato">Contato</a>
+    <button id="tema-toggle">🌙 Alternar Tema</button>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre a Alvo Marketing</h2>
+    <p>Somos uma agência especializada em produção de conteúdo digital e audiovisual. Atuamos com captação de imagem, identidade visual, gestão de Instagram e criação de vídeos institucionais. Nosso foco é gerar resultados com criatividade e estratégia.</p>
+  </section>
+
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <div class="servico">
+      <h3>Captação de Imagem</h3>
+      <p>Fotos e vídeos profissionais para destacar sua marca.</p>
+    </div>
+    <div class="servico">
+      <h3>Produção de Conteúdo</h3>
+      <p>Artes, posts e visuais impactantes para redes sociais.</p>
+    </div>
+    <div class="servico">
+      <h3>Identidade Visual</h3>
+      <p>Criação e desenvolvimento de identidade visual única.</p>
+    </div>
+    <div class="servico">
+      <h3>Gestão de Instagram</h3>
+      <p>Planejamento, calendário de postagens e crescimento orgânico.</p>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfólio</h2>
+
+    <div class="projeto">
+      <h3>Casa Grãos Café</h3>
+      <p>Apresentamos aqui alguns dos vídeos desenvolvidos para a empresa Grãos Café, como parte dos diversos projetos que realizamos juntos.</p>
+      <p>🎥 Os vídeos completos podem ser acessados através do link abaixo:</p>
+      <p>
+        <a href="https://drive.google.com/drive/folders/1sWX91DLLBb6qBumAsNi_qYBAV7sUKXpM" target="_blank" style="color: var(--roxo); font-weight: bold;">
+          ➤ Visualizar os vídeos no Google Drive
+        </a>
+      </p>
+    </div>
+
+    <div class="projeto">
+      <h3>Algumas imagens que registramos de produtos da linha de cafeterias:</h3>
+      <div class="galeria">
+        <img src="6.jpg" alt="Imagem 1">
+        <img src="2.jpg" alt="Imagem 2">
+        <img src="3.jpg" alt="Imagem 3">
+        <img src="4.jpg" alt="Imagem 4">
+        <img src="5.jpg" alt="Imagem 5">
+        <img src="1.jpg" alt="Imagem 6">
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Vamos conversar? Fale com a gente:</p>
+    <p>📸 Instagram: <a href="https://www.instagram.com/alvo.mkt_/" target="_blank">@alvo.mkt_</a></p>
+    <p>📧 E-mail: <a href="mailto:alvomktbr@gmail.com">alvomktbr@gmail.com</a></p>
+    <p>📞 WhatsApp: <a href="https://wa.me/5584988384859" target="_blank">(84) 98838-4859</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Alvo Marketing. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    const botaoTema = document.getElementById('tema-toggle');
+
+    botaoTema.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      const modo = document.body.classList.contains('dark-mode') ? 'escuro' : 'claro';
+      localStorage.setItem('tema', modo);
+      botaoTema.textContent = modo === 'escuro' ? '☀️ Alternar Tema' : '🌙 Alternar Tema';
+    });
+
+    window.onload = () => {
+      const temaSalvo = localStorage.getItem('tema');
+      if (temaSalvo === 'escuro') {
+        document.body.classList.add('dark-mode');
+        document.getElementById('tema-toggle').textContent = '☀️ Alternar Tema';
+      }
+    };
+  </script>
+</body>
+</html>
